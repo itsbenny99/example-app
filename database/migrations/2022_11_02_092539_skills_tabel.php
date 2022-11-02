@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('Role')->unique();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
-            $table->interger('permissionid')->nullable();
+            $table->integer('permissionid')->nullable();
             $table->timestamps();
         });
     }
