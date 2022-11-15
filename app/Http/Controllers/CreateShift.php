@@ -12,7 +12,8 @@ class CreateShift extends Controller
 {
     public function ShowShift(){
         $permission = Permission::get();
-        return view('admin.createshifts', compact('permission'));
+        $users = User::orderBy('name', 'ASC')->get();
+        return view('admin.createshifts', compact('permission'))->with('users', '$users');
     }
 
     public function SaveShift(){
