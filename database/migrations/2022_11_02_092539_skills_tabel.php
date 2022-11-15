@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('Role')->unique();
-            $table->id('permissionid');
+            $table->interger('permissionid');
             $table->timestamps();
         });
     }
