@@ -13,7 +13,7 @@ Route::get('/', function () {
 
 
 Route::get('/user/addavail/{id}', [Availability::class, 'EditAvailability']);
-Route::get('/admin/employeeskills', [EmployeeSkills::class, 'EmployeeSkillsView']);
+
 
 
 
@@ -24,7 +24,7 @@ Route::get('/admin/create/employeeskill', [EmployeeSkills::class, 'CreateEmploye
 Route::post('/admin/create/employeeskill', [EmployeeSkills::class, 'StoreEmployeeSkill']);
 Route::get('/admin/create/deleteemployeeskill/{id}', [EmployeeSkills::class, 'DeleteEmployeeSkill']);
 Route::get('/admin/userskills/{id}', [EmployeeSkills::class, 'UserSkills']);
-
+Route::get('/admin/employeeskills', [EmployeeSkills::class, 'EmployeeSkillsView']);
 
 
 
