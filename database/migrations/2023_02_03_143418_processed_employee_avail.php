@@ -13,23 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-         Schema::create('employee_skills', function (Blueprint $table) {
+        Schema::create('ProcessedEmployeeAvail', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('Role');
-            $table->strong('Note');
-            $table->integer('permissionid')->nullable;
-            $table->timestamps();
+            $table->string('date');
+            $table->integer('start_time');
+            $table->integer('end_time');
+            $table->integer('EmployeeId');
         });
     }
-    
+
     /**
      * Reverse the migrations.
      *
      * @return void
      */
-    public function down()
-    {
-           Schema::dropIfExists('employee_skills');
-    }
+   
 };

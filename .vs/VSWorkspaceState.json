@@ -4,13 +4,12 @@
     "\\app",
     "\\app\\Http",
     "\\app\\Http\\Controllers",
-    "\\app\\Http\\Controllers\\Auth",
-    "\\resources",
+    "\\app\\Models",
+    "\\app\\Providers",
+    "\\database\\migrations",
     "\\resources\\views",
-    "\\resources\\views\\auth",
-    "\\resources\\views\\layouts",
-    "\\routes"
+    "\\resources\\views\\layouts"
   ],
-  "SelectedNode": "\\routes\\web.php",
+  "SelectedNode": "\\app\\Models\\ProcessedEmployeeAvail.php",
   "PreviewInSolutionExplorer": false
 }

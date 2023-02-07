@@ -5,6 +5,7 @@ use App\Http\Controllers\EmployeeSkills;
 use App\Http\Controllers\Availability;
 use App\Http\Controllers\UserPermissions;
 use App\Http\Controllers\CreateShift;
+use App\Http\Controllers\CalenderController;
 
 
 Route::get('/', function () {
@@ -35,6 +36,13 @@ Route::post('/admin/userlist/{id}', [UserPermissions::class, 'AddPermission']);
 
 
 Route::get('/admin/createshift/', [CreateShift::class, 'ShowShift']);
+Route::post('/admin/createshift/', [CreateShift::class, 'StoreShift']);
+Route::get('/admin/showshift', [CreateShift::class, 'ShowStoredShifts']);
 
+Route::get('/admin/AutoAssign', [CreateShift::class, 'AssignShift']);
+
+
+Route::get('calendar-event', [CalenderController::class, 'index']);
+Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
 
 require __DIR__.'/auth.php';

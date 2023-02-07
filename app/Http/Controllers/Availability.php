@@ -10,5 +10,7 @@ class Availability extends Controller
         $users = User::find($id);
 
         return view('User.Availability.edit')->with('users', $users);
+
+
     }
 }

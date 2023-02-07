@@ -36,11 +36,12 @@ class EmployeeSkills extends Controller
         $a->name = $request->input('name');
         $a->role= $request->input('Role');
         $a->Note = $request->input('Note');
-
+        $role = Role::create(['name' => $request->input('name')]);
         $permission = Permission::create(['name' => $request->input('name')]);
 
         $a->permissionid = $permission->id;
         $a->save();
+
         return redirect('/admin/employeeskills');
     }
 
