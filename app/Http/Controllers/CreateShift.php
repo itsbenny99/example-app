@@ -38,6 +38,9 @@ class CreateShift extends Controller
         return view('admin.ShowShift')->with('skills', $skills)->with('shift', $shift);
     }
 
+    public function NewAssShift() {
+        $a = NewShiftAs::orderby('date', 'ASC')->get();
+    } 
     public function AssignShift() {
         $shift = Shift::orderby('date', 'ASC')->get();
         $skills = Skills::orderBy('name', 'ASC')->get();
