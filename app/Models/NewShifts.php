@@ -9,7 +9,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 use Illuminate\Database\Eloquent\Model;
 
-class NewAssignedShifts extends Model
+class NewShifts extends Model
 {
     protected $table = "NewAssignedShifts";
     protected $fillable = [
