@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Skills;
-use App\Modles\NewShifts;
+//use App\Modles\NewShifts;
 use App\Models\Shift;
 use App\Models\ProcessedEmployeeAvail;
 use Spatie\Permission\Models\Role;
