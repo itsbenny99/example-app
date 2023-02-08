@@ -52,7 +52,7 @@ class CreateShift extends Controller
                 if ($Avail!= null) {
                     if ($Avail->start_time <= $shift->start_time) {
                         if ($Avail->end_time >= $shift->end_time) {
-                            $a = new NewAssignedShifts;
+                            $a = new AssignedShifts;
                             //$a->date = $shift->date;
                             //$a->start_time = $shift->start_time;
                             //$a->end_time = $shift->end_time;
