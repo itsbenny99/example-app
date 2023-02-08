@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Skills;
-use App\Modles\NewAssignedShifts;
+use App\Modles\NewShifts;
 use App\Models\Shift;
 use App\Models\ProcessedEmployeeAvail;
 use Spatie\Permission\Models\Role;
@@ -52,7 +52,7 @@ class CreateShift extends Controller
                 if ($Avail!= null) {
                     if ($Avail->start_time <= $shift->start_time) {
                         if ($Avail->end_time >= $shift->end_time) {
-                            $a = new AssignedShifts;
+                            $a = new NewShifts;
                             //$a->date = $shift->date;
                             //$a->start_time = $shift->start_time;
                             //$a->end_time = $shift->end_time;
