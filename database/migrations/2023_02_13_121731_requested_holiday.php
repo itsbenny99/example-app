@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('start_date')
             $table->string('end_date')
+            $table->string('Reason')
             $table->integer('EmployeeId');
             $table->integer('status')->nullable();
             $table->timestamps();
