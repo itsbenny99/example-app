@@ -34,7 +34,7 @@ class HolidayRequests extends Command
     {
         $holiday = RequestedHoliday::orderby('date', 'ASC')->get();
         foreach ($holiday as $h) {
-            if $h->status = 1 {
+            if ($h->status = 1) {
                 $startDate =  Carbon::createFromFormat('d/m/Y', $h->start_date);
                 $endDate = Carbon::createFromFormat('d/m/Y', $h->end_date);
                 $dateRange = CarbonPeriod::create($startDate, $endDate);
