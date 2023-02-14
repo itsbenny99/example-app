@@ -13,7 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('ProcessedHoliday', function (Blueprint $table) {
+            $table->id();
+            $table->string('start_date');
+            $table->string('end_date');
+            $table->string('Reason');
+            $table->integer('EmployeeId');
+            $table->integer('status')->nullable();
+            $table->timestamps();
     }
 
     /**
@@ -21,8 +28,8 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
+public function down()
     {
-        //
+        Schema::dropIfExists('ProcessedHoliday');
     }
 };
