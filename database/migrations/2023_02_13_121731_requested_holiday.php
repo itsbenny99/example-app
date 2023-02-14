@@ -13,7 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('RequestedHoliday', function (Blueprint $table) {
+            $table->id();
+            $table->string('start_date')
+            $table->string('end_date')
+            $table->integer('EmployeeId');
+            $table->timestamps();
     }
 
     /**
@@ -21,8 +26,5 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
-    {
-        //
-    }
+   
 };
