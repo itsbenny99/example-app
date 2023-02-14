@@ -31,6 +31,7 @@ return new class extends Migration
             $table->integer('SundayEnd');
             $table->integer('EmployeeId');
     }
+    }
 
     /**
      * Reverse the migrations.

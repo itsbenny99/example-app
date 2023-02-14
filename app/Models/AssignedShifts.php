@@ -7,9 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class NewAssignedShifts extends Model
+use Illuminate\Database\Eloquent\Model;
+
+class AssignedShifts extends Model
 {
-    protected $table = "NewAssignedShifts";
+    protected $table = "assignedshift";
     protected $fillable = [
         'id',
         'date',

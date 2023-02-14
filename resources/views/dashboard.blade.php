@@ -14,12 +14,24 @@
                             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="py-3 px-6">Date</th>
-                                <th scope="col" class="py-3 px-6">Shift Time</></th>
-                                <th scope="col" class="py-3 px-6">Break</></th>
-                                <th scope="col" class="py-3 px-6">Location</></th>
-                                <th scope="col" class="py-3 px-6">Notes</></th>
+                                <th scope="col" class="py-3 px-6">Shift Start</></th>
+                                <th scope="col" class="py-3 px-6">Shift End</></th>
                             </tr>
                             </thead>
+                            @foreach($shift as $s)
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        {{$s->date}}
+                                    </th>
+                                    <td class="py-4 px-6">
+                                        {{$s->start_time}}
+                                    </td>
+                                    <td class="py-4 px-6">
+                                        {{$s->end_time}}
+                                    </td>
+                                </tr>
+                                @endforeach
+                                </tbody>
                         </table>
                     </div>
                 </div>
