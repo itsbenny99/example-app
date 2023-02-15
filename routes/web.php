@@ -6,11 +6,9 @@ use App\Http\Controllers\Availability;
 use App\Http\Controllers\UserPermissions;
 use App\Http\Controllers\CreateShift;
 use App\Http\Controllers\CalenderController;
+use App\Http\Controllers\FrontController;
 
-
-Route::get('/', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/', [FrontController::class, 'home'])->middleware(['auth', 'verified'])->name('dashboard');
 
 
 Route::get('/user/addavail/{id}', [Availability::class, 'EditAvailability']);
@@ -44,5 +42,7 @@ Route::get('/admin/AutoAssign', [CreateShift::class, 'AssignShift']);
 
 Route::get('calendar-event', [CalenderController::class, 'index']);
 Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
+
+Route::get('/myavailability', [FrontController::class, 'ViewAvail']);
 
 require __DIR__.'/auth.php';

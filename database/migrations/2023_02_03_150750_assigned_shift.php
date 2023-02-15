@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('start_time');
             $table->integer('end_time');
             $table->integer('EmployeeId');
+            $table->timestamps();
         });
     }
 

@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Skills;
-use App\Modles\NewShiftsAs;
+use App\Models\AssignedShifts;
 use App\Models\Shift;
 use App\Models\ProcessedEmployeeAvail;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
-
+use Illuminate\Support\Facades\Log;
 class CreateShift extends Controller
 {
     public function ShowShift(){
@@ -45,9 +45,10 @@ class CreateShift extends Controller
         $shift = Shift::orderby('date', 'ASC')->get();
         $skills = Skills::orderBy('name', 'ASC')->get();
         $users = User::inRandomOrder()->get();
-
+        Log::info("this is info message");
 
         foreach($shift as $shift) {
+            $Comp = 'False';
             $users = User::permission($shift->permission)->inRandomOrder()->get();
             foreach($users as $u) {
 
@@ -55,18 +56,22 @@ class CreateShift extends Controller
                 if ($Avail!= null) {
                     if ($Avail->start_time <= $shift->start_time) {
                         if ($Avail->end_time >= $shift->end_time) {
-                            $a = new NewShiftsAs;
-                            //$a->date = $shift->date;
-                            //$a->start_time = $shift->start_time;
-                            //$a->end_time = $shift->end_time;
-                            //$a->EmployeeId = $Avail->EmployeeId;
+                            if ($Comp == 'False') {
+                                $a = new AssignedShifts;
+                                $a->date = $shift->date;
+                                $a->start_time = $shift->start_time;
+                                $a->end_time = $shift->end_time;
+                                $a->EmployeeId = $Avail->EmployeeId;
+                                $Comp = 'True';
+                                $a->save();
 
-                            //$a->save();
+                                $Avail->delete();
+                                $shift->delete();
 
-                            //$avail->delete();
-                            //$shift->delete();
+                            }
+                        }
 
-
+    
                         }
                     }
 
@@ -82,5 +87,5 @@ class CreateShift extends Controller
             }
 
         }
-    }
+
 }

@@ -6,10 +6,8 @@
     "\\app\\Http\\Controllers",
     "\\app\\Models",
     "\\app\\Providers",
-    "\\database\\migrations",
-    "\\resources\\views",
-    "\\resources\\views\\layouts"
+    "\\config"
   ],
-  "SelectedNode": "\\app\\Models\\ProcessedEmployeeAvail.php",
+  "SelectedNode": "\\config\\app.php",
   "PreviewInSolutionExplorer": false
 }

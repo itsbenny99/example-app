@@ -30,12 +30,11 @@ return new class extends Migration
             $table->integer('SundayStart');
             $table->integer('SundayEnd');
             $table->integer('EmployeeId');
-    });
-     
-        public function down()
-    {
-        Schema::dropIfExists('EmployeeAvail');
     }
-}
+    }
+
+
+  
+
 
 };
