@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
-use App\Models\User;
-use App\Modles\RequestedHoliday;
-use App\Modles\ProcessedEmployeeAvail;
+use app\Models\User;
+use app\Modles\RequestedHoliday;
+use app\Modles\ProcessedEmployeeAvail;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
