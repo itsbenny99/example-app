@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Modles\ProcessedEmployeeAvail;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
+use App\Modles\Rholiday; 
 use Carbon\CarbonPeriod;
 use Illuminate\Support\Facades\Log;
 //use App\Modles\RequestedHoliday;
@@ -35,7 +36,8 @@ class HolidayRequests extends Command
      */
     public function handle()
     {
-        $holiday = \App\Modles\RequestedHoliday::orderby('date', 'ASC')->get();
+        //$holiday = \App\Modles\RequestedHoliday::orderby('date', 'ASC')->get();
+        $holiday = Rholiday::find(1)->get;
         foreach ($holiday as $h) {
             if ($h->status = 1) {
                 $startDate = \Carbon\Carbon::now()->startOfWeek();
@@ -45,10 +47,10 @@ class HolidayRequests extends Command
                 
                 foreach ($period as $date) {
                     $date->format('d/m/y');
-                    $ProcessedEmployeeAvail = ProcessedEmployeeAvail::where('EmployeeId' , '=', $h->EmployeeId)->where('date','=',$date);
-                    if ($ProcessedEmployeeAvail != null) {
+                    //$ProcessedEmployeeAvail = ProcessedEmployeeAvail::where('EmployeeId' , '=', $h->EmployeeId)->where('date','=',$date);
+                    //if ($ProcessedEmployeeAvail != null) {
                         
-                }
+               // }
                 
             }
         }
