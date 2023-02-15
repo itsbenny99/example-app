@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class RequestedHoliday extends Model
 {
-    $protected $table = "RequestedHoliday";
+    protected $table = "RequestedHoliday";
     protected $fillable = [
         'id',
         'start_date',
@@ -18,5 +18,5 @@ class RequestedHoliday extends Model
         'Reason',
         'EmployeeId',
         'status'
-        };
+        ];
 }
