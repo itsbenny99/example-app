@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Console\Commands;
-
+use App\Modles\RequestedHoliday;
 use Illuminate\Support\Facades\App;
 use App\Models\User;
 use App\Modles\RequestedHoliday;
@@ -10,7 +10,7 @@ use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
 use Illuminate\Support\Facades\Log;
-
+use App\Modles\RequestedHoliday;
 
 class HolidayRequests extends Command
 {
