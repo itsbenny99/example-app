@@ -35,7 +35,7 @@ class HolidayRequests extends Command
      */
     public function handle()
     {
-        $holiday = RequestedHoliday::orderby('date', 'ASC')->get();
+        $holiday = \App\Modles\RequestedHoliday::orderby('date', 'ASC')->get();
         foreach ($holiday as $h) {
             if ($h->status = 1) {
                 $startDate = \Carbon\Carbon::now()->startOfWeek();
