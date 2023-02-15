@@ -9,7 +9,6 @@ use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
 
 class Rholiday extends Model{
-{
     protected $table = "RequestedHoliday";
     protected $fillable = [
         'id',
