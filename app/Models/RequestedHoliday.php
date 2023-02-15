@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class RequestedHoliday extends Model
 {
-    protected $table = "RequestedHoliday";
+    protected $table = "Requested_Holiday";
     protected $fillable = [
         'id',
         'start_date',
