@@ -10,7 +10,7 @@ use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
 use Illuminate\Support\Facades\Log;
-use App\Modles\RequestedHoliday;
+//use App\Modles\RequestedHoliday;
 
 class HolidayRequests extends Command
 {
