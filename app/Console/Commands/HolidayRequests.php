@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 use App\Modles\RequestedHoliday;
 use Illuminate\Support\Facades\App;
 use App\Models\User;
-use App\Modles\RequestedHoliday;
+//use App\Modles\RequestedHoliday;
 use App\Modles\ProcessedEmployeeAvail;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
