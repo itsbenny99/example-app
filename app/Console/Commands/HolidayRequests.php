@@ -2,9 +2,10 @@
 
 namespace App\Console\Commands;
 
-use app\Models\User;
-use app\Modles\RequestedHoliday;
-use app\Modles\ProcessedEmployeeAvail;
+use Illuminate\Support\Facades\App;
+use App\Models\User;
+use App\Modles\RequestedHoliday;
+use App\Modles\ProcessedEmployeeAvail;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
@@ -44,7 +45,7 @@ class HolidayRequests extends Command
                 
                 foreach ($period as $date) {
                     $date->format('d/m/y');
-                    $ProcessedEmployeeAvail = $ProcessedEmployeeAvail::where('EmployeeId' , '=', $h->EmployeeId)->where('date','=',$date);
+                    $ProcessedEmployeeAvail = ProcessedEmployeeAvail::where('EmployeeId' , '=', $h->EmployeeId)->where('date','=',$date);
                     if ($ProcessedEmployeeAvail != null) {
                         
                 }
