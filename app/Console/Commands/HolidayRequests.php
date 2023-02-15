@@ -8,6 +8,8 @@ use App\Modles\ProcessedEmployeeAvail;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
+use Illuminate\Support\Facades\Log;
+
 
 class HolidayRequests extends Command
 {
@@ -35,12 +37,12 @@ class HolidayRequests extends Command
         $holiday = RequestedHoliday::orderby('date', 'ASC')->get();
         foreach ($holiday as $h) {
             if ($h->status = 1) {
-                $startDate =  Carbon::createFromFormat('d/m/Y', $h->start_date);
-                $endDate = Carbon::createFromFormat('d/m/Y', $h->end_date);
-                $dateRange = CarbonPeriod::create($startDate, $endDate);
+                $startDate = \Carbon\Carbon::now()->startOfWeek();
+                $endDate = \Carbon\Carbon::now()->endOfWeek();
+                $period = \Carbon\CarbonPeriod::create($startDate, $endDate);
                 
                 
-                foreach ($dateRange as $date) {
+                foreach ($period as $date) {
                     $date->format('d/m/y');
                     $ProcessedEmployeeAvail = $ProcessedEmployeeAvail::where('EmployeeId' , '=', $h->EmployeeId)->where('date','=',$date);
                     if ($ProcessedEmployeeAvail != null) {
