@@ -24,6 +24,10 @@ class FrontController extends Controller
         }
         Log::error($dates);
         $shift = AssignedShifts::where('EmployeeId', '=', $user->id)->where('date', '=', $dates)->orderBy('date')->get();
+        if ($shift = null) { 
+                return view('dashboard');
+        }
+         
         return view('dashboard', compact('shift'));
     }
 }
