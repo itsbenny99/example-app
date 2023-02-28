@@ -28,6 +28,6 @@ class FrontController extends Controller
                 return view('dashboard');
         }
          
-        return view('dashboard', compact('shift'));
+        return view('dashboard')->with('shift', $shift);;
     }
 }
