@@ -8,7 +8,7 @@ use App\Http\Controllers\CreateShift;
 use App\Http\Controllers\CalenderController;
 use App\Http\Controllers\FrontController;
 
-Route::get('/', [FrontController::class, 'home'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/', [FrontController::class, 'home']);
 
 
 Route::get('/user/addavail/{id}', [Availability::class, 'EditAvailability']);
