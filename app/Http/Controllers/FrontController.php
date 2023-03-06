@@ -28,7 +28,7 @@ class FrontController extends Controller
             $shift = 'empty';
              Log::error('No Shifts Found');
         
-        
+        }
       
          
         return view('dashboard')->with('shift', $shift)->with('dates', $dates);
