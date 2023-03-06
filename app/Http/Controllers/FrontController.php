@@ -27,8 +27,7 @@ class FrontController extends Controller
         if ($shift = null) {
             $shift = 'empty';
              Log::error('No Shifts Found');
-        }
-        Log::error($shift);
+        
         
       
          
