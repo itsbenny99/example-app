@@ -34,6 +34,7 @@
                                 @endforeach
                                 @else
                                 <p> No Shifts Found </p>
+                                @endif
                                 </tbody>
                         </table>
                     </div>
