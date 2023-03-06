@@ -26,6 +26,7 @@ class FrontController extends Controller
         $shift = AssignedShifts::where('EmployeeId', '=', $user->id)->where('date', '=', $dates)->orderBy('date')->get();
         if ($shift = null) {
             $shift = 'empty';
+             Log::error('No Shifts Found');
         }
         Log::error($shift);
         
