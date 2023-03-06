@@ -30,6 +30,6 @@ class FrontController extends Controller
                 return view('dashboard')->with('shift', $shift);
         }
          
-        return view('dashboard')->with('shift', $shift);
+        //return view('dashboard')->with('shift', $shift);
     }
 }
