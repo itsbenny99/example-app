@@ -18,7 +18,7 @@
                                 <th scope="col" class="py-3 px-6">Shift End</></th>
                             </tr>
                             </thead>
-                            @if($shift =! null)
+                            @if($shift == 'empty')
                             @foreach($shift as $s)
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
