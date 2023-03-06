@@ -9,7 +9,7 @@ use App\Http\Controllers\CalenderController;
 use App\Http\Controllers\FrontController;
 
 Route::get('/', [FrontController::class, 'home']);
-Route::get('/dashboard', [FrontController::class, 'home']);
+Route::get('/dashboard', [FrontController::class, 'home'])->name('dashboard');;
 
 
 Route::get('/user/addavail/{id}', [Availability::class, 'EditAvailability']);
