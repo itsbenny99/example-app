@@ -32,7 +32,7 @@ Route::get('/admin/userlist/', [UserPermissions::class, 'UserViews']);
 Route::get('/admin/userlist/{id}', [UserPermissions::class, 'ShowUserUpdate']);
 Route::post('/admin/userlist/{id}', [UserPermissions::class, 'AddPermission']);
 
-/Shifts
+//Shifts
 Route::get('/admin/createshift/', [CreateShift::class, 'ShowShift']);
 Route::post('/admin/createshift/', [CreateShift::class, 'StoreShift']);
 Route::get('/admin/showshift', [CreateShift::class, 'ShowStoredShifts']);
