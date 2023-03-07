@@ -8,8 +8,9 @@ use Auth;
 
 class Availability extends Controller
 {
-    public function EditAvailability($id) {
-        $users = User::find($id);
+    public function EditAvailability() {
+        $user = Auth::user();
+        $users = User::find($user->id);
         $availability = RequestedEmployeeAvail::where('EmployeeId', '=', $id)->get();
         return view('User.Availability.edit')->with('users', $users)->with('availability', $availability);
     }
