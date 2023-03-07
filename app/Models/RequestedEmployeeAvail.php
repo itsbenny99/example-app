@@ -29,7 +29,8 @@ class RequestedEmployeeAvail extends Model{
         'SaturdayEnd',
         'SundayStart',
         'SundayEnd',
-        'EmployeeId'
+        'EmployeeId',
+        'Status'
     ];
 }
 
