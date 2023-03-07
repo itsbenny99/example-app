@@ -23,14 +23,10 @@ class FrontController extends Controller
             array_push($dates, $d2);
         }
         Log::error($dates);
-        $shift = AssignedShifts::where('EmployeeId', '=', $user->id)->where('date', '=', $dates)->orderBy('date')->get();
-        if ($shift = null) {
-            $shift = 'empty';
-             Log::error('No Shifts Found');
         
-        }
-      
-         
+       
+        $shift = AssignedShifts::where('EmployeeId', '=', $user->id)->whereIn('date', $dates)->orderBy('date')->get();
+     
         return view('dashboard')->with('shift', $shift)->with('dates', $dates);
     }
 }
