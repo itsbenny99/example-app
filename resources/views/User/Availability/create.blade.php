@@ -16,7 +16,7 @@
                         
                          <div class ="mb-6">
                             {!! Form::label('name', 'Name', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
-                            {!! Form::select('name', null, [
+                            {!! Form::select('name', 0, [
                               0 => 'None',
                               1 => 'Minor Certified',
                               88 => 'Minor Montoring',
