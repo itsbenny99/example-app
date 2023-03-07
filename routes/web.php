@@ -13,7 +13,7 @@ Route::get('/', [FrontController::class, 'home']);
 Route::get('/dashboard', [FrontController::class, 'home'])->name('dashboard');;
 
 // Employee Availability 
-Route::get('/myavailability/{id}', [Availability::class, 'EditAvailability']);
+Route::get('/myavailability/', [Availability::class, 'EditAvailability']);
 Route::get('/myavailability/new', [Availability::class, 'CreateAvailability']);
 Route::post('/myavailability/new', [Availability::class, 'PostAvailability']);
 
