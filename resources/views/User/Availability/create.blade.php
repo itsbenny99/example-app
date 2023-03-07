@@ -11,7 +11,7 @@
                 <div class="overflow-x-auto relative">
                     <div class="w-full max-w-xs">
 
-                        {!! Form::open(['action' => ['App\Http\Controllers\Availability@PostAvailability\{$user->id}']]) !!}
+                        {!! Form::open(['action' => ['App\Http\Controllers\Availability@PostAvailability']]) !!}
                         @csrf
                         
                          <div class ="mb-6">
