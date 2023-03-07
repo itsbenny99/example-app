@@ -11,7 +11,10 @@ class Availability extends Controller
         $users = User::find($id);
         $availability = RequestedEmployeeAvail::where('EmployeeId', '=', $id)->get();
         return view('User.Availability.edit')->with('users', $users)->with('availability', $availability);
-
-
+    }
+    
+    public function CreateAvailability() {
+        $user = Auth::user();
+        return view('User.Availability.create')->with('user', $user);
     }
 }
