@@ -10,7 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
 
 class RequestedEmployeeAvail extends Model{
-    protected $table = "employeeavail";
+    protected $table = "EmployeeAvail";
     protected $fillable = [
         'id',
         'MondayEnd',
