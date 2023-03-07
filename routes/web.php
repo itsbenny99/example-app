@@ -14,8 +14,8 @@ Route::get('/dashboard', [FrontController::class, 'home'])->name('dashboard');;
 
 // Employee Availability 
 Route::get('/myavailability/{id}', [Availability::class, 'EditAvailability']);
-Route::get('/myavailability/new/{id}', [Availability::class, 'CreateAvailability']);
-Route::post('/myavailability/new/{id}', [Availability::class, 'PostAvailability']);
+Route::get('/myavailability/new', [Availability::class, 'CreateAvailability']);
+Route::post('/myavailability/new', [Availability::class, 'PostAvailability']);
 
 //Employee Skills
 Route::get('/admin/edit/employeeskill/{id}', [EmployeeSkills::class, 'EmployeeSkillsEdit']);
