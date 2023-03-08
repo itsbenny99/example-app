@@ -16,7 +16,7 @@
                         <div style ="display: flex; justify-content: space-around;'>
                         <div style ="border: 1px solid lightgray; background-color: red; width: 70%;">
                          <div class ="mb-6">
-                            {!! Form::label('start_time', 'Start Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
+                            {!! Form::label('start_time', 'Monday Start Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
                             {!! Form::select('name', [ '',
                               0 => '0000',
                               1 => '0100',
@@ -46,7 +46,7 @@
                         
                         </div>
                         <div class ="mb-6">
-                            {!! Form::label('end_time', 'End Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
+                            {!! Form::label('end_time', 'Monday End Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
                             {!! Form::select('end_time', [ '',
                               0 => '0000',
                               1 => '0100',
