@@ -13,8 +13,7 @@
 
                         {!! Form::open(['action' => ['App\Http\Controllers\Availability@PostAvailability']]) !!}
                         @csrf
-                        <div style ="display: flex; justify-content: space-around;'>
-                        <div style =" border: 1px solid lightgray; background-color: red; width: 40%;">
+                       
                          <div class ="mb-6">
                             {!! Form::label('start_time', 'Start Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
                             {!! Form::select('name', [ '',
