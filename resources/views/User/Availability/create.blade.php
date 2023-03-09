@@ -41,7 +41,7 @@
                               2100 => '2100',
                               2200 => '2200',
                               2300 => '2300' ,     
-                              -1 => 'Not Available ], null, ['class' => 'form-control']) !!}
+                              2500 => 'Not Available ], null, ['class' => 'form-control']) !!}
 
                         
                         </div>
