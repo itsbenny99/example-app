@@ -19,4 +19,11 @@ class Availability extends Controller
         $user = Auth::user();
         return view('User.Availability.create')->with('user', $user);
     }
+    
+    public function PostAvailability(Request $request) {
+        a = new RequestedEmployeeAvail;
+        a->MondayStart = $request->input('monday_start_time');
+        
+        a->save();
+       
 }
