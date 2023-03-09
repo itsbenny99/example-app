@@ -16,35 +16,9 @@
                         <div style ="display: flex; justify-content: space-around;'>
                         <div style ="border: 1px solid lightgray; background-color: red; width: 70%;">
                          <div class ="mb-6">
-                            {!! Form::label('monday_start_time', 'Monday Start Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
-                            {!! Form::select('monday_start_time', [
-                              0000 => '0000',
-                              0100 => '0100',
-                              0200 => '0200',
-                              0300 => '0300',
-                              0400 => '0400' ,
-                              0500 => '0500',
-                              0600 => '0600',
-                              0700 => '0700',
-                              0800 => '0800',
-                              0900 => '0900' ,                            
-                              1000 => '1000',
-                              1100 => '1100',
-                              1200 => '1200',
-                              1300 => '1300',
-                              1400 => '1400',
-                              1500 => '1500',
-                              1600 => '1600',
-                              1700 => '1700',
-                              1800 => '1800' ,
-                              1900 => '1900',
-                              2000 => '2000',
-                              2100 => '2100',
-                              2200 => '2200',
-                              2300 => '2300' ,  
-                              -1 => 'Not Available
-                           
-                              ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
+                            {!! Form::label('mondaystarttime', 'Monday Start Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
+                            {!! Form::select('category_id', [ 1 => 'Testing' ], null, ['class' => 'form-control']) !!}
+
                         
                         </div>
                         <div class ="mb-6">
