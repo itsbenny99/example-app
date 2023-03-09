@@ -25,5 +25,6 @@ class Availability extends Controller
         $a->MondayStart = $request->input('monday_start_time');
         
         $a->save();
+    }
        
 }
