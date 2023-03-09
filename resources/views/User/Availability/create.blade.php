@@ -17,7 +17,7 @@
                         <div style ="border: 1px solid lightgray; background-color: red; width: 70%;">
                          <div class ="mb-6">
                             {!! Form::label('monday_start_time', 'Monday Start Time', ['class' => 'block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300']) !!}
-                            {!! Form::select('monday_start_time', [ '',
+                            {!! Form::select('MondayStart', [ '',
                               0000 => '0000',
                               0100 => '0100',
                               0200 => '0200',
