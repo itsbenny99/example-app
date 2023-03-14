@@ -21,10 +21,10 @@ class Availability extends Controller
     }
     
     public function PostAvailability(Request $request) {
-       // $a = new RequestedEmployeeAvail;
-        //$a->MondayStart = $request->input('monday_start_time');
+        $a = new RequestedEmployeeAvail;
+        $a->MondayStart = $request->input('monday_start_time');
         
-       // $a->save();
+        $a->save();
     }
        
 }
