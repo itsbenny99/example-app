@@ -23,6 +23,22 @@ class Availability extends Controller
     public function PostAvailability(Request $request) {
         $a = new RequestedEmployeeAvail;
         $a->MondayStart = $request->input('monday_start_time');
+        $a->MondayEnd = $request->input('monday_end_time');
+        $a->TuesdayStart = $request->input('tuesday_start_time');
+        $a->TuesdayEnd = $request->input('tuesday_end_time');        
+        $a->WednesdayStart = $request->input('wednesday_start_time');
+        $a->WednesdayEnd = $request->input('wednesday_end_time');        
+        $a->ThursdayStart = $request->input('thursday_start_time');
+        $a->ThursdayEnd = $request->input('thursday_end_time'); 
+        $a->FridayStart = $request->input('friday_start_time');
+        $a->FridayEnd = $request->input('friday_end_time');
+        $a->SaturdayStart = $request->input('saturday_start_time');
+        $a->SaturdayEnd = $request->input('saturday_end_time');
+        $a->SundayStart = $request->input('sunday_start_time');
+        $a->SundayEnd = $request->input('sunday_end_time');
+        
+        $a->Status = ('0');
+        
         
         $a->save();
     }
