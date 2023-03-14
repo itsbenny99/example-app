@@ -21,6 +21,8 @@ class Availability extends Controller
     }
     
     public function PostAvailability(Request $request) {
+        $user = Auth::user();
+       
         $a = new RequestedEmployeeAvail;
         $a->MondayStart = $request->input('monday_start_time');
         $a->MondayEnd = $request->input('monday_end_time');
@@ -37,6 +39,7 @@ class Availability extends Controller
         $a->SundayStart = $request->input('sunday_start_time');
         $a->SundayEnd = $request->input('sunday_end_time');
         
+        $a->EmployeeId = $user->id;
         $a->Status = ('0');
         
         
