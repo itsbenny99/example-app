@@ -45,7 +45,11 @@ class EmployeeAvail extends Command
      */
     public function handle()
     {
-
+        $Avail =  RequestedEmployeeAvail::orderBy('id')->first();
+        foreach ($Avail as $a) { 
+            if $MondayStart < 10 {
+            }
+        }
 
         $startDate = \Carbon\Carbon::now()->startOfWeek();
         $endDate = \Carbon\Carbon::now()->endOfWeek();
