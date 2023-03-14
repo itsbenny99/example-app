@@ -43,7 +43,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
 
                         
@@ -75,7 +75,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                   
                         </div>
@@ -109,7 +109,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         
                         </div>
@@ -140,7 +140,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         </div>
                         </div>
@@ -173,7 +173,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         
                         </div>
@@ -204,7 +204,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         </div>
                         </div>
@@ -237,7 +237,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         
                         </div>
@@ -268,7 +268,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         </div>
                         </div>
@@ -301,7 +301,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         
                         </div>
@@ -332,7 +332,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         </div>
                         </div>
@@ -365,7 +365,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         
                         </div>
@@ -396,7 +396,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         </div>
                         </div>
@@ -429,7 +429,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         
                         </div>
@@ -460,7 +460,7 @@
                               21 => '2100',
                               22=> '2200',
                               23 => '2300',     
-                              25 => 'Not Available,
+                              25 => 'Not Available',
                               ], null,['class' => 'form-control bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500']) !!}
                         </div>
                         </div>
