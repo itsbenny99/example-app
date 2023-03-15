@@ -35,7 +35,7 @@
                                  <td class="py-4 px-6">
                                 @foreach($u->permissions as $p)
                                  
-                                        {{$p->title}}
+                                        {{$p->name}}
                                
                                 @endforeach
                                 </td>
