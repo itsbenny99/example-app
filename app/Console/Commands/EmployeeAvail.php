@@ -49,9 +49,8 @@ class EmployeeAvail extends Command
         foreach ($Avail as $a) { 
             if ($a->MondayStart < 10) {
                 $num = $a->MondayStart;
-                $str = "00{$num}0";
-                $astr = "00{$str}";
-                $a->MondayStart = $astr; 
+                $number = sprintf("%03d", $num);
+                $a->MondayStart = $number; 
                 $a->save();
             }
         }
