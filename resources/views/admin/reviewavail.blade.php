@@ -53,8 +53,11 @@
                                      {{$a->SundayStart}} -> {{$a->SundayEnd}}
                                 </td>     
                                 <td class="py-4 px-6">
-                                  <form action="/admin/accepted/employeeavail/{{$a->EmployeeId}}">
+                                  <form action="/admin/accepted/employeeavail/{{$a->EmployeeId}}/a">
                                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Accept</button>
+                            </form>
+                             <form action="/admin/accepted/employeeavail/{{$a->EmployeeId}}/r">
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Reject</button>
                             </form>
                                 </td>  
                            </tr>
