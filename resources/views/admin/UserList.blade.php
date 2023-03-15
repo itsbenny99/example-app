@@ -19,7 +19,7 @@
                         <tr>
                             <th scope="col" class="py-3 px-6">Name</th>
                             <th scope="col" class="py-3 px-6">Email</></th>
-
+                            <th scope="col" class="py-3 px-6">Edit</></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -31,7 +31,11 @@
                                 <td class="py-4 px-6">
                                     {{$u->email}}
                                 </td>
-
+                                <td class="py-4 px-6">
+                                    <form action="/admin/userlist/{{$u->id}}">
+                                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Reject</button>
+                                </form>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
