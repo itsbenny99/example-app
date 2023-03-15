@@ -60,6 +60,7 @@
                                  Accepted
                                  @endif
                                  @if ($a->Status == 2)
+                                 Rejected
                                  @endif
                                  </td>
                            </tr>
