@@ -50,8 +50,8 @@ class EmployeeAvail extends Command
             if ($a->MondayStart < 10) {
                 $num = $a->MondayStart;
                 $str = "00{$num}0";
-                $str = "00{$str}";
-                $a->MondayStart = $str; 
+                $astr = "00{$str}";
+                $a->MondayStart = $astr; 
                 $a->save();
             }
         }
