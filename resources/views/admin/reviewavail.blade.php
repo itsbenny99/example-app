@@ -24,6 +24,7 @@
                             <th scope="col" class="py-3 px-6">Friday</th>
                             <th scope="col" class="py-3 px-6">Saturday</></th>
                             <th scope="col" class="py-3 px-6">Sunday</th>
+                            <th scope="col" class="py-3 px-6">Accept</th>
                         </tr>
                         </thead>
                         <tbody>
