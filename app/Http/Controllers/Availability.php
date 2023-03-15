@@ -61,6 +61,7 @@ class Availability extends Controller
         if ($a == 'r') {
            $availability->Status = 2; 
            $availability->save();
+        }
     }
        
 }
