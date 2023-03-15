@@ -33,8 +33,10 @@
                                     {{$u->email}}
                                 </td>
                                  <td class="py-4 px-6">
-                                @foreach($u->permissions as $p)
-                                    {{$p->title}}
+                                @foreach($u->roles as $r)
+                                    @foreach($r->permissions as $p)
+                                        {{$p->title}}
+                                    @endforeach
                                 @endforeach
                                 </td>
                                 <td class="py-4 px-6">
