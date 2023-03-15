@@ -48,8 +48,10 @@ class EmployeeAvail extends Command
         $Avail =  RequestedEmployeeAvail::orderBy('id')->get();
         foreach ($Avail as $a) { 
             if ($a->MondayStart < 10) {
-               
-                $num = number_format(00, $a->MondayStart, 0);
+                $first = 00;
+                $end = 0; 
+                
+                $num = $first.$a->MondayStart.$end;
                 $a->MondayStart = $num; 
                 $a->save();
             }
