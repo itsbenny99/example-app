@@ -45,7 +45,7 @@ class EmployeeAvail extends Command
      */
     public function handle()
     {
-        $Avail =  RequestedEmployeeAvail::orderBy('id')->first();
+        $Avail =  RequestedEmployeeAvail::orderBy('id')->get();
         foreach ($Avail as $a) { 
             if ($a->MondayStart < 10) {
                 $num = $a->MondayStart;
