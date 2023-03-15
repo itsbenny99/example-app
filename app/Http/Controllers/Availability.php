@@ -51,11 +51,11 @@ class Availability extends Controller
          return view('admin.reviewavail')->with('availability', $availability);
     }
     
-    public function AcceptedAvailability($id, $a) {
-        $availability = RequestedEmployeeAvail::where('EmployeeId', '=', $id)->where('status', '=', 0)->first();
+    public function AcceptedAvailability($id, $a, $eid) {
+        $availability = RequestedEmployeeAvail::where('id', '=', $id)->where('status', '=', 0)->first();
         if ($a == 'a') {
            $temp = $availability;
-           $oldAvailability = RequestedEmployeeAvail::where('EmployeeId', '=', $id)->get();
+           $oldAvailability = RequestedEmployeeAvail::where('EmployeeId', '=', $eid)->get();
            foreach ($oldAvailability as $o) {
                $o->Status = 2;
                $o->save();
