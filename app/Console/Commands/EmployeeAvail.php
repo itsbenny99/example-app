@@ -50,7 +50,7 @@ class EmployeeAvail extends Command
             if ($a->MondayStart < 10) {
                 $num = $a->MondayStart;
                 $num = number_format(00, $num, 0);
-                $a->MondayStart = $number; 
+                $a->MondayStart = $num; 
                 $a->save();
             }
         }
