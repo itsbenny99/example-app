@@ -31,7 +31,7 @@
                         
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <td class="py-4 px-6">
-                                    {{$a->MondayStart}} {{$a->MondayEnd}}
+                                    {{$a->MondayStart}} -> {{$a->MondayEnd}}
                                 </td>
                                 <td class="py-4 px-6">
                                      {{$a->TuesdayStart}} {{$a->TuesdayEnd}}
