@@ -34,22 +34,22 @@
                                     {{$a->MondayStart}} -> {{$a->MondayEnd}}
                                 </td>
                                 <td class="py-4 px-6">
-                                     {{$a->TuesdayStart}} {{$a->TuesdayEnd}}
+                                     {{$a->TuesdayStart}} -> {{$a->TuesdayEnd}}
                                 </td>
                                 <td class="py-4 px-6">
-                                    {{$a->WednesdayStart}} {{$a->WednesdayEnd}}
+                                    {{$a->WednesdayStart}} -> {{$a->WednesdayEnd}}
                                 </td>
                                 <td class="py-4 px-6">
-                                     {{$a->ThursdayStart}} {{$a->ThursdayEnd}}
+                                     {{$a->ThursdayStart}} -> {{$a->ThursdayEnd}}
                                 </td>
                                 <td class="py-4 px-6">
-                                    {{$a->FridayStart}} {{$a->FridayEnd}}
+                                    {{$a->FridayStart}} -> {{$a->FridayEnd}}
                                 </td>
                                 <td class="py-4 px-6">
-                                     {{$a->SaturdayStart}} {{$a->SaturdayEnd}}                                   
+                                     {{$a->SaturdayStart}} -> {{$a->SaturdayEnd}}                                   
                                 </td>  
                                  <td class="py-4 px-6">
-                                     {{$a->SundayStart}} {{$a->SundayEnd}}
+                                     {{$a->SundayStart}} -> {{$a->SundayEnd}}
                                 </td>     
                             </tr>
                         @endforeach
