@@ -39,8 +39,10 @@
 
 
                     <x-slot name="content">
-                        <x-dropdown-link :href="route('logout')"></x-dropdown-link>
-                        <x-dropdown-link href="/admin/employeeskills">Employee Skills</x-dropdown-link>
+                        <x-dropdown-link href="/admin/accepted/employeeavail/">Review Requested Employee Availability</x-dropdown-link>
+                         <x-dropdown-link href="/admin/employeeskills">Create New Employee Skills</x-dropdown-link>
+                    </x-slot>
+                                             <x-dropdown-link href="/admin/userlist/">Edit User List</x-dropdown-link>
                     </x-slot>
 
 
