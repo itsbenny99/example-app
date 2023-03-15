@@ -11,7 +11,7 @@ class Availability extends Controller
     public function EditAvailability() {
         $user = Auth::user();
         $users = User::find($user->id);
-        $availability = RequestedEmployeeAvail::where('EmployeeId', '=', $users->id)->ordrby('id', 'DESC')->get();
+        $availability = RequestedEmployeeAvail::where('EmployeeId', '=', $users->id)->orderby('id', 'DESC')->get();
         return view('User.Availability.edit')->with('users', $users)->with('availability', $availability);
     }
     
