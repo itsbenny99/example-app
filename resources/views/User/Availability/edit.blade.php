@@ -53,13 +53,13 @@
                                      {{$a->SundayStart}} -> {{$a->SundayEnd}}
                                 </td>     
                                  <td class="py-4 px-6">
-                                 @if ($a->status == 0)
+                                 @if ($a->Status == 0)
                                  Under Review
                                  @endif
-                                 @if ($a->status == 1)
+                                 @if ($a->Status == 1)
                                  Accepted
                                  @endif
-                                 @if ($a->status == 2)
+                                 @if ($a->Status == 2)
                                  @endif
                                  </td>
                            </tr>
