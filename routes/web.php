@@ -18,7 +18,7 @@ Route::get('/myavailability/new', [Availability::class, 'CreateAvailability']);
 Route::post('/myavailability/new', [Availability::class, 'PostAvailability']);
 
 Route::get('/admin/accepted/employeeavail', [Availability::class, 'ReviewAvailability']);
-Route::post('/admin/accepted/employeeavail' , [Availability::class, 'AcceptedAvailability']);
+Route::post('/admin/accepted/employeeavail/a' , [Availability::class, 'AcceptedAvailability']);
     
 
 //Employee Skills
