@@ -31,6 +31,7 @@ class UserPermissions extends Controller
                 $users->givePermissionTo($p);
             }
         }
+        return redirect('/admin/userlist/');
 
 }
 }
