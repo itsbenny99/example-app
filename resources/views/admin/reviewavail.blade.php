@@ -53,7 +53,9 @@
                                      {{$a->SundayStart}} -> {{$a->SundayEnd}}
                                 </td>     
                                 <td class="py-4 px-6">
-                                    <input type="button" href="admin/accepted/employeeavail/" value="✓ Test" />
+                                  <form action="/admin/accepted/employeeavail/{{$a->EmployeeId}}">
+                                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="submit">Accept</button>
+                            </form>
                                 </td>  
                            </tr>
                             
