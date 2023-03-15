@@ -53,6 +53,8 @@ class Availability extends Controller
     
     public function AcceptedAvailability($id, $a) {
         $availability = RequestedEmployeeAvail::where('EmployeeId', '=', $id)->where('status', '=', 0)->get();
+        if ($a == 'a') {
+        }
     }
        
 }
