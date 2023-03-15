@@ -41,7 +41,7 @@
                     <x-slot name="content">
                         <x-dropdown-link href="/admin/accepted/employeeavail/">Review Requested Employee Availability</x-dropdown-link>
                          <x-dropdown-link href="/admin/employeeskills">Create New Employee Skills</x-dropdown-link>
-                         <x-dropdown-link href="/admin/userlist/">Create New Employee Skills</x-dropdown-link>
+                         <x-dropdown-link href="/admin/userlist/">Edit Users</x-dropdown-link>
                     
                     </x-slot>
                      
