@@ -45,18 +45,6 @@ class EmployeeAvail extends Command
      */
     public function handle()
     {
-        $Avail =  RequestedEmployeeAvail::orderBy('id')->get();
-        foreach ($Avail as $a) { 
-            if ($a->MondayStart < 10) {
-                $first = 00;
-                $end = 0; 
-                
-                $num = $first.$a->MondayStart.$end;
-                $a->MondayStart = $num; 
-                $a->save();
-            }
-        }
-
         $startDate = \Carbon\Carbon::now()->startOfWeek();
         $endDate = \Carbon\Carbon::now()->endOfWeek();
         $period = \Carbon\CarbonPeriod::create($startDate, $endDate);
@@ -69,7 +57,7 @@ class EmployeeAvail extends Command
 
             $user = User::orderby('name', 'ASC')->get();
             foreach ($user as $u) {
-                $Avail = RequestedEmployeeAvail::where('EmployeeId', '=', $u->id)->orderBy('id')->first();
+                $Avail = RequestedEmployeeAvail::where('EmployeeId', '=', $u->id)->where('Status', '=', 1)->orderBy('id')->first();
                 Log::error($Avail);
 
                 if ($Avail != null) {
