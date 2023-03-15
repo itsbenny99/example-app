@@ -49,7 +49,7 @@ class EmployeeAvail extends Command
         foreach ($Avail as $a) { 
             if ($a->MondayStart < 10) {
                 $num = $a->MondayStart;
-                $number = sprintf("%03d", $num);
+                $num = number_format(00, $num, 0);
                 $a->MondayStart = $number; 
                 $a->save();
             }
