@@ -51,7 +51,7 @@ class Availability extends Controller
          return view('admin.reviewavail')->with('availability', $availability);
     }
     
-    public function AcceptedAvailability($id, $a, $eid) {
+    public function AcceptedAvailability($id, $eid, $a) {
         $availability = RequestedEmployeeAvail::where('id', '=', $id)->where('status', '=', 0)->first();
         if ($a == 'a') {
            $temp = $availability;
