@@ -52,7 +52,11 @@
                                  <td class="py-4 px-6">
                                      {{$a->SundayStart}} -> {{$a->SundayEnd}}
                                 </td>     
-                            </tr>
+                                <td class="py-4 px-6">
+                                    <input type="button" href="admin/accepted/employeeavail/" value="✓ Test" />
+                                </td>  
+                           </tr>
+                            
                         @endforeach
                                                 </tbody>
                     </table>
