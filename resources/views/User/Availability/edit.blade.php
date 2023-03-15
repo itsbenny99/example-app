@@ -59,7 +59,7 @@
                                  @if ($a->status == 1)
                                  Accepted
                                  @endif
-                                 @if ($a->status == 3)
+                                 @if ($a->status == 2)
                                  @endif
                                  </td>
                            </tr>
