@@ -9,7 +9,7 @@
                         {{ __('MySchedule') }}
                     </x-nav-link>
 
-                    <x-nav-link href="/admin/employeeskills" :active="request()->routeIs('myavail')" >
+                    <x-nav-link href="/myavailability" :active="request()->routeIs('myavail')" >
                         {{ __('My Availability') }}
                     </x-nav-link>
                 </div>
