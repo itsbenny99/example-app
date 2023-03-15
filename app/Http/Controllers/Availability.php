@@ -45,5 +45,13 @@ class Availability extends Controller
         
         $a->save();
     }
+    
+    public function ReviewAvailability() {
+         $availability = RequestedEmployeeAvail::where('status', '=', 0)->get();
+         return view('admin.reviewavail')->with('availability', $availability);
+    }
+    
+    public function AcceptedAvailability() {
+    }
        
 }
