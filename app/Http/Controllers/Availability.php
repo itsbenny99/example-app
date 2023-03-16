@@ -56,9 +56,9 @@ class Availability extends Controller
         if ($a == 'a') {
            
            $oldAvailability = RequestedEmployeeAvail::where('EmployeeId', '=', $eid)->where('status', '=', '1')->first();
-            foreach ($oldAvailability as $a) {
-           $a->Status = 2;
-          $a->save();
+           if ( $oldAvailability != null) {
+           $oldAvailabilit->Status = 2;
+          $oldAvailabilit->save();
             }
            $availability->Status = 1; 
            $availability->save();
