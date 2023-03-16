@@ -44,6 +44,7 @@ class Availability extends Controller
         
         
         $a->save();
+        return redirect('/myavailability/');
     }
     
     public function ReviewAvailability() {
@@ -69,6 +70,7 @@ class Availability extends Controller
            $availability->save();
         }
         
+        return redirect('/admin/accepted/employeeavail');
         
     }
     
@@ -76,5 +78,6 @@ class Availability extends Controller
         $availability = RequestedEmployeeAvail::where('status', '=', 2)->get();
         $user = User::orderby('id')->get();
         return view('admin.viewemployeeavail')->with('availability', '$availability')->with('user', '$user');
+    }
        
 }
