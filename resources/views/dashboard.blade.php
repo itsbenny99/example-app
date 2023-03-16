@@ -28,6 +28,18 @@
                             @php
                             $i= 1
                             @endphp
+                            @if($shift->isEmpty())
+                            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        {{$d}}
+                                 </th>
+                                  <td class="py-4 px-6">
+                                       Not Schdudled
+                                    </td>
+                                    <td class="py-4 px-6">
+                                        Schdudled
+                                    </td>
+                                </tr>
+                            @endif
                             @foreach($shift as $s)
                             @if ($i = 1)
                             @if ($s->date == $d)
