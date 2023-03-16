@@ -71,5 +71,10 @@ class Availability extends Controller
         
         
     }
+    
+    public function ViewEmployee() {
+        $availability = RequestedEmployeeAvail::where('status', '=', 2)->get();
+        $user = User::orderby('id')->get();
+        return view('admin.viewemployeeavail')->with('availability', '$availability')->with('user', '$user');
        
 }
