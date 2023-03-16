@@ -25,7 +25,9 @@
                                 $i=0
                               @endphp
                             @foreach($dates as $d)
-                         
+                            @php
+                            $i= 1
+                            @end
                             @foreach($shift as $s)
                             @if ($i = 1)
                             @if ($s->date == $d)
@@ -54,7 +56,7 @@
                              @endif
                              @endif
                              @php
-                             $i = i+1
+                             $i = $i+1
                              @endphp
                                 @endforeach
                               @endforeach
