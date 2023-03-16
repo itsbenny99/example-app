@@ -18,11 +18,15 @@
                                 <th scope="col" class="py-3 px-6">Shift End</></th>
                             </tr>
                             </thead>
-                            {{$shift[2]->start_time}}
+                          
                             @if($shift != 'empty')
-                            
+                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            @foreach($dates as $d)
+                                                                <th scope="row" class="py-4 px-6 font-medium text-gray-900                              whitespace-nowrap dark:text-white">
+                                        {{$d}}
+                                    </th>
                             @foreach($shift as $s)
-                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                               
                                     <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                         {{$s->date}}
                                     </th>
