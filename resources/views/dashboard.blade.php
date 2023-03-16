@@ -36,7 +36,7 @@
                                        Not Schdudled
                                     </td>
                                     <td class="py-4 px-6">
-                                        Schdudled
+                                        Not Scheduled
                                     </td>
                                 </tr>
                             @endif
@@ -60,10 +60,10 @@
                                         {{$d}}
                                  </th>
                                   <td class="py-4 px-6">
-                                       Not Schdudled
+                                      Not Scheduled
                                     </td>
                                     <td class="py-4 px-6">
-                                        Schdudled
+                                       Not Schdudled
                                     </td>
                                 </tr>
                              @endif
