@@ -25,6 +25,7 @@
                                                                 <th scope="row" class="py-4 px-6 font-medium text-gray-900                              whitespace-nowrap dark:text-white">
                                         {{$d}}
                                     </th>
+                                    @endforeach
                             @foreach($shift as $s)
                                
                                     <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
