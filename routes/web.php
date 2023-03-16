@@ -19,7 +19,7 @@ Route::post('/myavailability/new', [Availability::class, 'PostAvailability']);
 
 Route::get('/admin/accepted/employeeavail', [Availability::class, 'ReviewAvailability']);
 Route::get('/admin/accepted/employeeavail/{id}/{eid}/{a}' , [Availability::class, 'AcceptedAvailability']);
-    
+Route::get('/admin/view/employeeavail', [Availability::class, 'ViewEmployee']);
 
 //Employee Skills
 Route::get('/admin/edit/employeeskill/{id}', [EmployeeSkills::class, 'EmployeeSkillsEdit']);
