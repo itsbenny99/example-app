@@ -54,9 +54,9 @@ class Availability extends Controller
     public function AcceptedAvailability($id, $eid, $a) {
         $availability = RequestedEmployeeAvail::where('id', '=', $id)->first();
         if ($a == 'a') {
-           
+          
            $oldAvailability = RequestedEmployeeAvail::where('EmployeeId', '=', $eid)->where('status', '=', '1')->first();
-           if ( $oldAvailability != null) {
+           if (!empty($oldAvailability) {
            $oldAvailabilit->Status = 2;
           $oldAvailabilit->save();
             }
