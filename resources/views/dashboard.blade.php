@@ -27,7 +27,7 @@
                             @foreach($dates as $d)
                             @php
                             $i= 1
-                            @end
+                            @endphp
                             @foreach($shift as $s)
                             @if ($i = 1)
                             @if ($s->date == $d)
