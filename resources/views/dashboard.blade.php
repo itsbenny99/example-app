@@ -42,7 +42,7 @@
                                 </tr>
                            @else
                                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        {{$d}
+                                        {{$d}}
                                  </th>
                                   <td class="py-4 px-6">
                                        Not Schdudled
