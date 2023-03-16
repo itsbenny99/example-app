@@ -28,7 +28,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($users as $u)
+                        @foreach($user as $u)
                         @foreach($availability as $a)
                         
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
