@@ -21,10 +21,13 @@
                           
                            
                              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                             @php
+                                $i=0
+                              @endphp
                             @foreach($dates as $d)
                             @php
-                            $i = 0
-                            $i = i+1 
+                                $i = 0
+                                $i = i+1 
                             @endphp
                             @foreach($shift as $s)
                             @if ($i = 1)
