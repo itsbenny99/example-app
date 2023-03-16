@@ -57,7 +57,7 @@
                              $i = i+1
                              @endphp
                                 @endforeach
-                              
+                              @endforeach
                                 </tbody>
                         </table>
                     </div>
