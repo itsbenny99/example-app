@@ -28,7 +28,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @if ($availability == 'NONE')
+                        @if ($availability != 'NONE')
                         @foreach($user as $u)
                         @foreach($availability as $a)
                         
