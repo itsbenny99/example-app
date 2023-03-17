@@ -32,40 +32,13 @@
                         <P> NONE</P>
                         @else
                         @foreach($user as $u)
-                        @foreach($availability as $a)
+                    
                         
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                   <td class="py-4 px-6">
                                     {{$u->name}}
                                 </td>
-                                
-                                
-                                <td class="py-4 px-6">
-                                    {{$a->MondayStart}} -> {{$a->MondayEnd}}
-                                </td>
-                                <td class="py-4 px-6">
-                                     {{$a->TuesdayStart}} -> {{$a->TuesdayEnd}}
-                                </td>
-                                <td class="py-4 px-6">
-                                    {{$a->WednesdayStart}} -> {{$a->WednesdayEnd}}
-                                </td>
-                                <td class="py-4 px-6">
-                                     {{$a->ThursdayStart}} -> {{$a->ThursdayEnd}}
-                                </td>
-                                <td class="py-4 px-6">
-                                    {{$a->FridayStart}} -> {{$a->FridayEnd}}
-                                </td>
-                                <td class="py-4 px-6">
-                                     {{$a->SaturdayStart}} -> {{$a->SaturdayEnd}}                                   
-                                </td>  
-                                 <td class="py-4 px-6">
-                                     {{$a->SundayStart}} -> {{$a->SundayEnd}}
-                                </td>     
-                                <td class="py-4 px-6">
-                                  </td>  
-                           </tr>
-                            
-                        @endforeach
+
                         @endforeach
                         @endif
                                                 </tbody>
