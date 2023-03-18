@@ -9,8 +9,8 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <br>
-                <form action="/admin/create/employeeskill">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Create New Skills</button>
+                <form action="/admin/accepted/employeeavail">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Review New Requsted Availabilty</button>
                 </form>
                 <div class="p-6 bg-white border-b border-gray-200"></div>
                 <div class="overflow-x-auto relative">
@@ -36,12 +36,7 @@
                                  <td class="py-4 px-6">
                                     {{$u->name}}
                                 </td>
-                                
-                                 <td class="py-4 px-6">
-                                    {{$a->MondayStart}} -> {{$a->MondayEnd}}
-                                </td>
-                                
-                                
+
                                 <td class="py-4 px-6">
                                     {{$a->MondayStart}} -> {{$a->MondayEnd}}
                                 </td>
