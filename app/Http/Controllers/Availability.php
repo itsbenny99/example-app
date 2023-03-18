@@ -86,6 +86,7 @@ class Availability extends Controller
         
         foreach ($user as $u) {
                   Log::info($u->name);
+        }
         return view('admin.viewemployeeavail')->with('availability', '$availability')->with('user', '$user');
     }
        
