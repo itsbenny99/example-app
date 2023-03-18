@@ -31,7 +31,7 @@
                         @if ($availability == 'NONE')
                         <P> NONE</P>
                         @elseif ($availability != 'NONE')
-                        @foreach($user as $u)
+                        @foreach($users as $u)
                     @foreach($availability as $a)
                         
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
