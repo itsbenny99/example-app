@@ -51,7 +51,7 @@ class Availability extends Controller
     }
     
     public function ReviewAvailability() {
-         $availability = RequestedEmployeeAvail::where('status', '=', 0)->get();
+         $availability = RequestedEmployeeAvail::where('Status', '=', 0)->get();
          return view('admin.reviewavail')->with('availability', $availability);
     }
     
@@ -79,7 +79,7 @@ class Availability extends Controller
     
     public function ViewEmployee() {
         
-        $availability = RequestedEmployeeAvail::where('status', '=', 1)->get();
+        $availability = RequestedEmployeeAvail::where('Status', '=', 1)->get();
         return view('admin.viewemployeeavail')->with('availability', '$availability');
     }
        
