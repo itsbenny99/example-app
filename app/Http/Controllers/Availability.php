@@ -5,6 +5,9 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\RequestedEmployeeAvail;
 use Auth;
+use Illuminate\Support\Facades\Log;
+
+
 
 class Availability extends Controller
 {
@@ -80,6 +83,9 @@ class Availability extends Controller
             $availability = 'NONE';
         }
         $user = User::orderBy('name', 'ASC')->get();
+        
+        foreach ($user as $u) {
+                  Log::info($u->name);
         return view('admin.viewemployeeavail')->with('availability', '$availability')->with('user', '$user');
     }
        
