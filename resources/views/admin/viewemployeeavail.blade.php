@@ -31,6 +31,7 @@
                  
                       @foreach($availability as $a)
                       @foreach($users as $u)
+                      @if($u->id == $a->EmployeeId)
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                  <td class="py-4 px-6">
                                     {{$u->name}}
@@ -64,7 +65,7 @@
                                 </td>     
                                
                            </tr>
-                            
+                         @endif   
                         @endforeach
                         
                         @endforeach
