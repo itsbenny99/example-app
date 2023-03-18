@@ -31,13 +31,11 @@
                         @if ($availability == 'NONE')
                         <P> NONE</P>
                         @elseif ($availability != 'NONE')
-                        @foreach($users as $u)
+
                     @foreach($availability as $a)
                         
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                  <td class="py-4 px-6">
-                                    {{$u->name}}
-                                </td>
+                                 
                                                                 
                                 
                                 <td class="py-4 px-6">
@@ -67,7 +65,7 @@
                             
                         @endforeach
 
-                        @endforeach
+               
                        
                         @endif
                                                 </tbody>
