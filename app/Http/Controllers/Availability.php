@@ -82,12 +82,12 @@ class Availability extends Controller
         if (empty($availability)) {
             $availability = 'NONE';
         }
-        $user = User::orderBy('name', 'ASC')->get();
+        $users = User::orderBy('name', 'ASC')->get();
         
         foreach ($user as $u) {
                   Log::info($u->name);
         }
-        return view('admin.viewemployeeavail')->with('availability', '$availability')->with('user', '$user');
+        return view('admin.viewemployeeavail')->with('availability', '$availability')->with('users', '$users');
     }
        
 }
