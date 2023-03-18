@@ -30,7 +30,7 @@
                         <tbody>
                         @if ($availability == 'NONE')
                         <P> NONE</P>
-                        @elseif ($availbility != 'NONE')
+                        @elseif ($availability != 'NONE')
                         @foreach($user as $u)
                     @foreach($availability as $a)
                         
