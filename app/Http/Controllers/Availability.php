@@ -58,16 +58,17 @@ class Availability extends Controller
     public function AcceptedAvailability($id, $eid, $a) {
         $availability = RequestedEmployeeAvail::where('id', '=', $id)->first();
         if ($a == 'a') {
-          
            $oldAvailability = RequestedEmployeeAvail::where('EmployeeId', '=', $eid)->where('status', '=', '1')->first();
-           if (!empty($oldAvailability)) {
-           $oldAvailability->Status = 2;
-          $oldAvailability->save();
-            }
-           $availability->Status = 1; 
-           $availability->save();
            
+            if (!empty($oldAvailability)) {
+               $oldAvailability->Status = 2;
+               $oldAvailability->save();
+            }
+          
+            $availability->Status = 1; 
+           $availability->save();  
         }
+        
         if ($a == 'r') {
            $availability->Status = 2; 
            $availability->save();
@@ -78,9 +79,9 @@ class Availability extends Controller
     }
     
     public function ViewEmployee() {
-        
+        $users = User::orderBy('name', 'ASC')->get();
         $availability = RequestedEmployeeAvail::where('Status', '=', 1)->get();
-        return view('admin.viewemployeeavail')->with('availability', $availability);
+        return view('admin.viewemployeeavail')->with('availability', $availability)->with('users', $users);
     }
        
 }
