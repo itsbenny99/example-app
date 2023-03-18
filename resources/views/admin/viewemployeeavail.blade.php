@@ -28,16 +28,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @if ($availability == 'NONE')
-                        <P> NONE</P>
-                        @elseif ($availability != 'NONE')
-
-                    @foreach($availability as $a)
+                      @foreach($availability as $a)
                         
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                 
-                                                                
-                                
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <td class="py-4 px-6">
                                     {{$a->MondayStart}} -> {{$a->MondayEnd}}
                                 </td>
@@ -60,14 +53,16 @@
                                      {{$a->SundayStart}} -> {{$a->SundayEnd}}
                                 </td>     
                                 <td class="py-4 px-6">
-                                  </td>  
+                                  <form action="/admin/accepted/employeeavail/{{$a->id}}/{{$a->EmployeeId}}/a">
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Accept</button>
+                            </form>
+                             <form action="/admin/accepted/employeeavail/{{$a->id}}/{{$a->EmployeeId}}/r">
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Reject</button>
+                            </form>
+                                </td>  
                            </tr>
                             
                         @endforeach
-
-               
-                       
-                        @endif
                                                 </tbody>
                     </table>
                 </div>
