@@ -79,16 +79,8 @@ class Availability extends Controller
     
     public function ViewEmployee() {
         
-        
-        $users = User::orderBy('name', 'ASC')->get();
-        $availability = RequestedEmployeeAvail::where('status', '=', 1)->get();
-        if (empty($availability)) {
-            $availability = 'NONE';
-        }
-        
-        
-       
-        return view('admin.viewemployeeavail')->with('availability', '$availability')->with('users', '$users');
+          availability = RequestedEmployeeAvail::where('status', '=', 1->get();
+        return view('admin.viewemployeeavail')->with('availability', '$availability');
     }
        
 }
