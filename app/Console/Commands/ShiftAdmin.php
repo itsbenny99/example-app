@@ -48,6 +48,6 @@ class ShiftAdmin extends Command
      }
 }  
        
-       
+}       
        
        
