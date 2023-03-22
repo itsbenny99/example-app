@@ -33,11 +33,17 @@ class ShiftAdmin extends Command
              $user = User::orderby('name', 'ASC')->get();
              
              foreach($user as $u) {
-              $shift = Shift::get();
-              
-              if ($shift->date == $d2) {
-                 $shift->delete();
-              }
+                  $shift = Shift::get();
+                  $Assigned = AssignedShifts::get();
+
+                  if ($shift->date == $d2) {
+                     $shift->delete();
+                  }
+                 
+                 if ($Assigned->date == $d2) {
+                     $Assigned->delete();
+                 }
+                  
          }
      }
 }  
