@@ -85,6 +85,7 @@ class CreateShift extends Controller
 
 
             }
+        return redirect('/admin/showshift/');
 
         }
 
