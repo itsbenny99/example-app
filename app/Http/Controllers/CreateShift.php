@@ -22,7 +22,7 @@ class CreateShift extends Controller
     public function ShowAllocatedShifts(){
         $shift = AssignedShifts::get();
         return view('admin.assigned')->with('shift', $shift);
-
+    }
     public function StoreShift(Request $request){
         $a = new Shift;
         $a->date = $request->input('date');
