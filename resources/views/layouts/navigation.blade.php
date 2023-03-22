@@ -68,8 +68,8 @@
 
                     <x-slot name="content">
                         <x-dropdown-link href="/admin/createshift/">Create Shifts</x-dropdown-link>
-                         <x-dropdown-link href="/admin/showshift/">Show New Shifts</x-dropdown-link>
-                         <x-dropdown-link href="/admin/AutoAssign/">Assign Shifts</x-dropdown-link>
+                         <x-dropdown-link href="/admin/showshift/">Show Unallocated Shifts</x-dropdown-link>
+                         <x-dropdown-link href="/admin/AutoAssign/">Show Allocated Shifts</x-dropdown-link>
                     
                     </x-slot>
                      
