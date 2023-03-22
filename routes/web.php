@@ -40,7 +40,7 @@ Route::post('/admin/userlist/{id}', [UserPermissions::class, 'AddPermission']);
 Route::get('/admin/createshift/', [CreateShift::class, 'ShowShift']);
 Route::post('/admin/createshift/', [CreateShift::class, 'StoreShift']);
 Route::get('/admin/showshift', [CreateShift::class, 'ShowStoredShifts']);
-
+Route::get('/admin/shift/allocated/', [CreateShift::class, 'ShowAllocatedShifts']);
 Route::get('/admin/AutoAssign', [CreateShift::class, 'AssignShift']);
 
 
