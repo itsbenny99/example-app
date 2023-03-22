@@ -18,6 +18,10 @@ class CreateShift extends Controller
         $users = User::orderBy('name', 'ASC')->get();
         return view('admin.createshifts', compact('permission'))->with('users', '$users');
     }
+    
+    public function ShowAllocatedShifts(){
+        $shift = AssignedShifts::get();
+        return view('admin.assigned')->with('shift', $shift);
 
     public function StoreShift(Request $request){
         $a = new Shift;
