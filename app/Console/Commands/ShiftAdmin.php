@@ -25,7 +25,7 @@ class ShiftAdmin extends Command
     {
        $LastWeekDate=\Carbon\Carbon::now()->subWeek()->format('d-m-Y'); 
        $TodayDate=\Carbon\Carbon::now()->format('d-m-Y');  
-       $period = \Carbon\CarbonPeriod::create($LastWeekDate, $endDate);
+       $period = \Carbon\CarbonPeriod::create($LastWeekDate, $TodayDate);
         foreach ($period as $date) {
             $d = $date->format('l');
             $d2 = $date->format('d/m/Y');
