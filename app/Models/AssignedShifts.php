@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class AssignedShifts extends Model
 {
-    protected $table = "AssignedShift";
+    protected $table = "assignedshift";
     protected $fillable = [
         'id',
         'date',
